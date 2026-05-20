@@ -1,0 +1,87 @@
+baseURL = "https://changwmyung.github.io/sermons/"
+languageCode = "ko-kr"
+title = "주일 설교 노트"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+pagination.pagerSize = 30
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+section = ["HTML", "RSS"]
+
+[markup]
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = false
+style = "github"
+[markup.goldmark.renderer]
+unsafe = true
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 2
+
+[params]
+env = "production"
+title = "주일 설교 노트"
+description = "Chang Woo Myung — 주일 예배 설교 자동 요약 모음"
+author = "Chang Woo Myung (명창우)"
+DateFormat = "2006-01-02"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+ShowToc = true
+TocOpen = false
+comments = false
+hidemeta = false
+hideSummary = false
+
+[params.assets]
+disableHLJS = true
+disableFingerprinting = false
+
+[params.homeInfoParams]
+Title = "주일 설교 노트"
+Content = """매주일 예배 설교의 자동 전사 + 요약 모음입니다.
+
+말씀을 들으며 흘려보냈던 부분을 다시 읽고 묵상하기 위한 개인 아카이브.
+출처 녹음이 있는 경우 함께 첨부됩니다.
+
+— Chang Woo Myung (SKKU)
+"""
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/changwmyung"
+
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
+
+[[menu.main]]
+identifier = "home"
+name = "전체 설교"
+url = "/"
+weight = 10
+
+[[menu.main]]
+identifier = "archive"
+name = "Archive"
+url = "/archives/"
+weight = 20
