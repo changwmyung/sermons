@@ -11,7 +11,7 @@ buildExpired = false
 pagination.pagerSize = 30
 
 [permalinks]
-posts = "/:filename/"
+posts = "/:contentbasename/"
 
 [minify]
 disableXML = true
