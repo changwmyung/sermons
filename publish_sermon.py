@@ -73,7 +73,7 @@ def main():
         fm["date"] = datetime.now().strftime("%Y-%m-%d")
     slug = args.slug or slugify(fm["title"], fm["date"])
 
-    out_path = HERE / "content" / f"{slug}.md"
+    out_path = HERE / "content" / "posts" / f"{slug}.md"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     fm_lines = []
     for k in ["date", "title", "subtitle", "draft"]:

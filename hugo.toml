@@ -10,6 +10,9 @@ buildExpired = false
 
 pagination.pagerSize = 30
 
+[permalinks]
+posts = "/:filename/"
+
 [minify]
 disableXML = true
 minifyOutput = true
@@ -36,6 +39,7 @@ env = "production"
 title = "주일 설교 노트"
 description = "Chang Woo Myung — 주일 예배 설교 자동 요약 모음"
 author = "Chang Woo Myung (명창우)"
+mainSections = ["posts"]
 DateFormat = "2006-01-02"
 defaultTheme = "auto"
 disableThemeToggle = false
